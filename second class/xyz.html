@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <fieldset>
+        <label for="">variable</label><br>
+    <input type="text" id="x"><br>
+    <label for="">masud</label><br>
+    <input type="text" id="y"><br><br>
+
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="div()"><br><br>
+    
+   
+
+
+
+    <input type="text" id="result"><br>
+    </fieldset>
+        
+    
+
+    <script>
+
+        function sum(){
+            let nijum = parseInt(document.getElementById("x").value);
+            let masud = parseInt(document.getElementById("y").value);
+            let sum = nijum + masud;
+            document.getElementById("result").value = sum;
+        }
+        function sub(){
+            let nijum = parseInt(document.getElementById("x").value);
+            let masud = parseInt(document.getElementById("y").value);
+            let sum = nijum - masud;
+            document.getElementById("result").value = sum;
+        }
+        function multi(){
+            let nijum = parseInt(document.getElementById("x").value);
+            let masud = parseInt(document.getElementById("y").value);
+            let sum = nijum * masud;
+            document.getElementById("result").value = sum;
+        }
+        function div(){
+            let nijum = parseInt(document.getElementById("x").value);
+            let masud = parseInt(document.getElementById("y").value);
+            let sum = nijum / masud;
+            document.getElementById("result").value = sum;
+        }
+
+    </script>
+
+</body>
+</html>
