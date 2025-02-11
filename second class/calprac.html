@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <label for="">inbox 1</label><br>
+    <input type="text" id="atiqu1"><br>
+    <label for="">inbox 2</label><br>
+    <input type="text" id="atiqu2"onfocusout="sum()"><br><br>
+
+    <input type="button" value="+" onclick="sum()">
+    <input type="button" value="-" onclick="sub()">
+    <input type="button" value="*" onclick="multi()">
+    <input type="button" value="/" onclick="div()">
+    <input type="button" value="%" onclick="mod()">
+    <input type="button" value="Percentage" onclick="percentage()"><br><br>
+
+
+    <input type="text" id="result">
+
+    <script>
+        function sum(){
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = atiqu1 + atiqu2;
+            document.getElementById(result).value = sum;
+
+
+        }
+
+        function sub(){ 
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = atiqu1 - atiqu2;
+            document.getElementById(result).value = sum;
+        }
+        
+        function multi(){ 
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = atiqu1 * atiqu2;
+            document.getElementById(result).value = sum;
+        }
+        function div(){ 
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = atiqu1 / atiqu2;
+            document.getElementById(result).value = sum;
+        }
+        function mod(){ 
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = atiqu1 % atiqu2;
+            document.getElementById(result).value = sum;
+        }
+        function percentage(){ 
+            let atiqu1 = parseFloat(document.getElementById(atiqu1).value);
+            let atiqu2 = parseFloat(document.getElementById(atiqu2).value);
+            let sum = (atiqu1 /100) * atiqu2;
+            document.getElementById(result).value = sum;
+        }
+
+
+    </script>
+   
+</body>
+</html>
