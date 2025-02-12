@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">Input1</label><br>
+    <input type="text" id="number1"><br>
+    <label for="">Input2</label><br>
+    <input type="text" id="number2"><br><br>
+    <input type="button" value="Show the largest" onclick="show()">
+
+    <input type="text" id="result">
+    <script>
+
+        function show() {
+            let number1 = parseInt(document.getElementById("number1").value);
+            let number2 = parseInt(document.getElementById("number2").value);
+            // let sum = (number1 >= number2);
+            // document.getElementById("result").value = sum
+
+            if (number1 >= number2) {
+
+                // document.getElementById("result").value = number1 +' is the largest number';
+                document.getElementById("result").innerHTML= number1 +' is the largest number';
+
+            }
+            else {
+
+
+                document.getElementById("result").innerHTML = number2 +' is the largest number';
+
+
+
+            }
+
+        }
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <label for="">input 1</label><br>
+    <input type="text" id="number1"><br>
+    <label for="">input 2</label><br>
+    <input type="text" id="number2"><br>
+    <label for="">input 3</label><br>
+    <input type="text" id="number3"><br><br>
+
+    <input type="button" value="Submit" onclick="show()"><br>
+    
+
+
+    <span id="result"></span>
+
+
+    <script>
+        function show() {
+
+            let num1 = parseInt(document.getElementById('number1').value);
+            let num2 = parseInt(document.getElementById('number2').value);
+            let num3 = parseInt(document.getElementById('number3').value);
+
+            if (num1 >= num2 && num1 >= num3) {
+
+                document.getElementById("result").innerHTML = num1 + ' is the largest number';
+
+            }
+
+            else if (num2 >= num3) {
+
+                document.getElementById("result").innerHTML = num2 + ' is the largest number';
+            }
+
+            else {
+
+                document.getElementById("result").innerHTML = num3 + ' is the largest number';
+
+            }
+
+
+        }
+
+    </script>
+</body>
+
+</html>
