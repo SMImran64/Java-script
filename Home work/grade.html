@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let totalMarks = parseInt(prompt('Enter a marks'));
+
+
+        if (totalMarks > 32 && totalMarks <= 39) {
+            document.write('You have got D')
+
+
+        }
+        else if (totalMarks > 39 && totalMarks <= 49) {
+
+            document.write('Youhave got C')
+        }
+        else if (totalMarks > 49 && totalMarks <= 59) {
+
+            document.write('Youhave got B')
+        }
+        else if (totalMarks > 59 && totalMarks <= 69) {
+
+            document.write('Youhave got A-')
+        }
+        else if (totalMarks > 69 && totalMarks <= 79) {
+
+            document.write('Youhave got A')
+        }
+        else if (totalMarks > 79 && totalMarks <= 100) {
+
+            document.write('Youhave got A+')
+        }
+        else if (totalMarks > 100)
+            document.write('Invalid Number')
+
+        else {
+            document.write(totalMarks + ' Faild');
+
+        }
+    </script>
+</body>
+
+</html>
