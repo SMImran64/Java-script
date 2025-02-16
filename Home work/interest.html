@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+    let tAmnt = parseFloat( prompt('Enter Amount'))
+    let vld = parseFloat( prompt('Enter a time period'))
+
+    if(tAmnt<=0 && vld<=0 ){
+        document.write(tAmnt + " it cannot be calculated")
+    }
+    else if(vld>5){
+
+        document.write((tAmnt*vld)*(5+2)/100 +' taka interest')
+
+
+    }
+    else{
+
+        document.write( (tAmnt*vld)*5/100 +' taka interest')
+
+    }
+
+</script>
+</body>
+</html>

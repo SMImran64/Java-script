@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        let amnt = parseFloat(prompt('Enter a amount to calculate discout amout'));
+
+        if (amnt >= 100 && amnt <= 300) {
+
+            document.write(amnt * 10 / 100 + ' is a discout amount')
+
+        }
+
+        else if (amnt >= 300 && amnt <= 700) {
+
+            document.write(amnt * 15 / 100 + ' is a discout amount')
+
+        }
+        else if (amnt >= 700 && amnt <= 1000) {
+
+            document.write(amnt * 20 / 100 + ' is a discout amount')
+
+        }
+
+        else if (amnt > 1000) {
+
+            document.write(amnt * 25 / 100 + ' is a discout amount')
+
+        }
+        else {
+
+            document.write(amnt + ' discout is not applicable for this amout')
+
+        }
+    </script>
+</body>
+
+</html>
