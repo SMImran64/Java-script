@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let fctNum = parseInt(prompt('Enter a number'));
+        let factorial = 1;
+
+        for (let n = 1; n <= fctNum; n++) {
+
+            factorial *= n;
+
+
+        }
+
+        document.write(' Factorial of this ' + fctNum + ' is ' + factorial);
+
+        // second method 
+
+        for (let i = fctNum; i >= 1; i--) {
+            factorial *= i
+
+        }
+        document.write(' Factorial of this ' + fctNum + ' is ' + factorial);
+
+        //  3rd method 
+
+
+
+
+    </script>
+</body>
+
+</html>

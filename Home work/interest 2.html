@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let amnt = parseFloat(prompt('Enter a amount to calculate interest'));
+        let tmPrd = parseFloat(prompt('Enter a time period'));
+        if (tmPrd == 0 && amnt == 0) {
+            document.write(amnt +' there is no interest')
+
+        }
+
+        else if (tmPrd <= 5 && amnt * tmPrd * 0.05) {
+
+            document.write( amnt + ' taka is the interest ').value
+
+        }
+        else if (tmPrd > 5 && amnt * tmPrd * 0.07) {
+            document.write( amnt + ' taka is the interest').value
+
+        }
+        else {
+
+            document.write( amnt + ' taka is the interest').value
+        }
+    </script>
+</body>
+
+</html>
