@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+
+
+
+        let show = parseInt(prompt('Find a prime number'));
+
+        let count = 0;
+
+        for (let a = 1; a <= show; a++) {
+
+            if (show % a == 0) {
+                count += 1;
+
+            }
+
+        }
+
+        if (count == 2) {
+
+            document.write(show + ' is a prime number')
+
+        }
+        else {
+            document.write(show + ' is not a prime number')
+
+        }
+
+    </script>
+</body>
+
+</html>
