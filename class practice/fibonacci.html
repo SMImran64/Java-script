@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let sms = parseInt(prompt('Enter a limit'));
+        let n1 = 0;
+        let n2 = 1;
+        let sum = 0;
+        let result = n1 + n2;
+
+        document.write( n1 + '<br>');
+        document.write( n2 + '<br>');
+
+        for(let i=3; i<=sms; i++){
+
+            sum = n1 + n2 ;
+            document.write( sum + ' <br>');
+           
+            n1 = n2;
+            n2 = sum;
+            result += sum;
+        }
+
+        document.write('=');
+        document.write(result);
+
+    </script>
+</body>
+</html>

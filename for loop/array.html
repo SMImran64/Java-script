@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let names = ['shimanto', 'atiqu', 'imran', 'masud', 'istiaq', 'arif', 'atik', 'reja', 'ab.rahim', 'sadier', 'rakib', 'parvez', 'eiasin', 'shathe', 'rahmat'];
+        let passwords = ['123', '231', '213', '312', '143', '413', '314', '341', '258', '852', '456', '147', '741', '471', '714'];
+    
+        let useName = prompt('Enter your name').toLowerCase();
+
+        for (let i = 0; i < names.length; i++){
+
+            if(useName == names[i].toLowerCase()){
+                let index = i;
+                
+                let password = prompt('Enter your password');
+                
+                if(password == passwords[index]){
+                    document.write('Welcome to '+ useName);
+
+                }
+                else{
+                    document.write('Password is Incorrect');
+                }
+                break;
+
+            }
+            if(i == names.length-1){
+                document.write('Your name is not Found');
+           
+
+        }
+        
+
+        }
+    
+    
+    
+    </script>
+</body>
+
+</html>

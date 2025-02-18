@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let useName = parseInt(prompt('Enter size'));
+        let sum = 0;
+        let myArra = [];
+
+
+        for (let i = 0; i <= useName; i++) {
+
+            let input = parseInt(prompt('Enter value'));
+
+            sum += input;
+            myArra[i] = input;
+
+        }
+        document.write(myArra + ' <br>');
+        document.write(sum);
+    </script>
+</body>
+
+</html>
