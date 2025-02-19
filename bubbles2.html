@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let masud = [5,8,4,6,7,10,90,80,40,60];
+
+        for(let i=0; i<masud.length-1; i++){
+
+            for(let j= 0; j<masud.length-1-i; j++){
+
+                if(masud[j]>masud[j+1]){
+
+                    let temp = masud[j];
+                    masud[j] = masud [j+1];
+                    masud[j+1] = temp;
+
+                }
+
+            }
+
+        }
+        document.write(masud);
+    </script>
+</body>
+</html>

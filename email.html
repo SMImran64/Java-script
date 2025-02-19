@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let email = prompt('Enter Email Address');
+        let pattern = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
+
+        if(pattern.test(email)){
+            document.write('valid email address');
+
+        }
+        else{
+            document.write('Invalid email address');
+        }
+        
+    </script>
+</body>
+</html>

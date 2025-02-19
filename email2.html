@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="">Email Address</label><br>
+        <input type="text" id="email"><br>
+
+        <span id="message"></span> <br>
+        <input type="button" value="Submit" onclick="check()">
+
+        <script>
+            function check() {
+                let email = document.getElementById('email').value;
+
+                let pattern = /^\S+@\S+\.\S+$/;
+                if (pattern.test(email)) {
+
+                    document.getElementById('message').innerHTML = "<span style ='color:green;'>Email is valid</span><br>";
+                }
+                else {
+                    document.getElementById('message').innerHTML = "<span style ='color:red;'>Email is Invalid</span><br>";
+                }
+            }
+        </script>
+    </form>
+</body>
+
+</html>
