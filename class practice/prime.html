@@ -9,19 +9,19 @@
 
 <body>
     <script>
-        let masud = parseInt(prompt('Enter a number'));
-        count = 0;
-        for (let i = 1; i <= masud; i++) {
-            if (masud % i == 0) {
-
+        let input = parseInt(prompt("Enter a number to check Prime or not"));
+        let count = 0;
+        for (let i = 0; i <= input; i++) {
+            if (input % i == 0) {
                 count += 1;
             }
+
         }
         if (count == 2) {
-            document.write(masud + ' is a prime number');
+            document.write(input + ' is a prime number');
         }
         else {
-            document.write(masud + ' is not a prime number');
+            document.write(input + ' is not a prime number');
         }
     </script>
 </body>

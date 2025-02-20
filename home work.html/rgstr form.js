@@ -1,6 +1,6 @@
 
-function formShow(event) {
-    event.preventDefault();
+function formShow() {
+    
     let uName = document.getElementById('name').value;
     let email = document.getElementById('email').value;
     let password = document.getElementById('password').value;
