@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container justify-content-center">
+        <form action="">
+            <label for="">Name</label><br>
+            <input type="text" id="name1"><br>
+            <label for="">ID</label><br>
+            <input type="text" id="id1"><br>
+            <label for="">Email</label><br>
+            <input type="email" id="email1"><br>
+            <input type="button" value="Submit" onclick="formSubmit()">
+
+        </form>
+    </div>
+    <script>
+        function formSubmit() {
+            let userName = document.getElementById('name1').value;
+            let userName1 = document.getElementById('id1').value;
+            let userName2 = document.getElementById('email1').value;
+
+
+            let output = "Name: " + userName + "<br>"
+                + "Id: " + userName1 + "<br>"
+                + "Email: " + userName2;
+
+
+            let newWindow = window.open("", '_blank');
+            newWindow.document.write("<pre>" + output + "</pre>");
+
+
+
+            console.log(userName + ' ' + userName1 + ' ' + userName2);
+        }
+    </script>
+
+
+</body>
+
+</html>

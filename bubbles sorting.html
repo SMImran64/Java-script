@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let myArray = [ 5,15,25,35,40,10,20,30,];
+
+
+        for(let i = 0; i <myArray.length-1; i++){
+            for(let j=0; j<myArray.length-1-i; j++){
+
+                if(myArray[j]>myArray[j+1]){
+                    let temp = myArray[j];
+                     myArray[j] = myArray[j+1];
+                     myArray[j+1] = temp ;
+
+
+                }
+                
+
+            }
+
+        }
+        document.write(myArray + '<br>')
+        </script>
+</body>
+</html>
