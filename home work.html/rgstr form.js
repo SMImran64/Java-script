@@ -14,7 +14,7 @@ function formShow() {
 
 
     let hobbyValue = [];
-    for (let i = 0; i < hobby.length; i++) {
+    for (let i = 0; i <hobby.length; i++) {
 
         hobbyValue.push(hobby[i].value);
 
