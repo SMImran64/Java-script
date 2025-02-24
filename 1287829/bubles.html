@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubles short</title>
+</head>
+<body>
+    <script>
+        let short =[10,20,5,15,30,25,4,2];
+
+        for(let i = 0; i<short.length-1;i++){
+
+            for(let j=0; j<short.length-1-i; j++){
+
+                if(short[j]>short[j+1]){
+
+                    let temp = short[j];
+
+                    short[j]=short[j+1];
+
+                    short[j+1]=temp;
+
+                }
+
+            }
+
+        }
+        document.write('Bubles sort is: '+ short );
+    </script>
+</body>
+</html>
