@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubles</title>
+</head>
+<body>
+    <script>
+        let num = parseInt(prompt('Enter a size'));
+        let myArra =[];
+
+        for(let i= 0; i<=num ; i++){
+            let num1= parseInt(prompt('Enter'+(i+1)+'value'));
+            myArra[i]=num1;
+           
+        }
+                
+        for(let j=0; j<myArra.length-1; j++){
+
+            for(let k=0; k<myArra.length-1-j; k++){
+
+            }
+                
+                if(myArra[k]>myArra[k+1]){
+
+                    let temp = myArra[k];
+                    myArra[k]=myArra[k+1];
+
+                    myArra[k+1]= temp;
+
+                }
+            } 
+
+            document.write(myArra + '<br>'); 
+        
+
+
+
+    </script>
+</body>
+</html>
