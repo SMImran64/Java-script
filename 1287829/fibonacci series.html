@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibo series</title>
+</head>
+
+<body>
+    <script>
+        // program to generate fibonacci series up to n terms
+
+        // take input from the user
+        const number = parseInt(prompt('Enter the number of terms: '));
+        let n1 = 0;
+        let n2 = 1;
+        let nextTerm;
+
+        for (let i = 1; i <= number; i++) {
+
+            nextTerm = n1 + n2;
+            n1 = n2;
+            n2 = nextTerm;
+        }
+
+        document.write("fibonacci series: " +nextTerm);
+    </script>
+</body>
+
+</html>
